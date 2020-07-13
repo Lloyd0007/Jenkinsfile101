@@ -8,8 +8,8 @@ environment {
       stage("Deploy") {
             steps {
                 echo 'Deploying the application....'
-                echo "Deploying with ${JGIT_ASKPASS}"
-                sh "${GIT_ASKPASS "
+                echo "Deploying with ${GIT_ASKPASS}"
+                sh "${GIT_ASKPASS"
             }
         }
     }
