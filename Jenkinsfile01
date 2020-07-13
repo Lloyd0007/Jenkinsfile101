@@ -1,16 +1,12 @@
 pipeline { 
 agent any
-environment {
-   GIT_ASKPASS = credentials('my-Github-credentials')
-}
+
     stages {
         //skip the build and test stages 
       stage("Deploy") {
             steps {
                 echo 'Deploying the application....'
-                echo "Deploying with ${GIT_ASKPASS}"
-                sh "${GIT_ASKPASS}"
-            }
+         }
         }
     }
 }
