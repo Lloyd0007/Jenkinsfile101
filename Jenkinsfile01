@@ -1,15 +1,15 @@
 pipeline { 
 agent any
 environment {
-    JENKINS_CREDENTIALS = credentials('ee9757fd')
+   GIT_ASKPASS = credentials('ee9757fd')
 }
     stages {
         //skip the build and test stages 
       stage("Deploy") {
             steps {
                 echo 'Deploying the application....'
-                echo "Deploying with ${JENKINS_CREDENTIALS}"
-                sh "${JENKINS_CREDENTIALS}"
+                echo "Deploying with ${JGIT_ASKPASS}"
+                sh "${GIT_ASKPASS "
             }
         }
     }
