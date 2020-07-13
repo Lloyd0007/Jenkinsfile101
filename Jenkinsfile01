@@ -9,7 +9,7 @@ environment {
             steps {
                 echo 'Deploying the application....'
                 echo "Deploying with ${GIT_ASKPASS}"
-                sh "${GIT_ASKPASS"
+                sh "${GIT_ASKPASS}"
             }
         }
     }
