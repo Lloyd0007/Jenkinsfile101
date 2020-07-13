@@ -1,7 +1,7 @@
 pipeline { 
 agent any
 environment {
-   GIT_ASKPASS = credentials('ee9757fd')
+   GIT_ASKPASS = credentials('my-Github-credentials')
 }
     stages {
         //skip the build and test stages 
