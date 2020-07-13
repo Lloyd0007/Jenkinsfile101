@@ -9,6 +9,7 @@ environment {
             steps {
                 echo 'Deploying the application....'
                 echo "Deploying with ${JENKINS_CREDENTIALS}"
+                sh "${JENKINS_CREDENTIALS}"
             }
         }
     }
